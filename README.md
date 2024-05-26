@@ -16,3 +16,15 @@ Item(null,"001",500,20.0),Payment=150
 Item("Kniga",null,120,5.0),60
 
 ![tabela](https://github.com/anagjurchinova/SI_2024_lab2_222004/assets/120587988/cf53a5c8-b587-4570-8724-5671434547c5)
+
+#Tест случаи според критериумот Multiple Condition
+
+if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0) == '0')
+
+Можни услови :
+
+F && X && X -> item.getPrice() < =300 , item.getDiscount() = anything, item.getBarcode().charAt(0)=anything
+
+T && F && X ->item.getPrice() >=300 , item.getDiscount() <=0 , item.getBarcode().chatAt(0)=anything
+
+T && T && T -> item.getPrice() >= 300, item.getDiscount() > 0 , item.getBarcode().charAt(0) == '0'
